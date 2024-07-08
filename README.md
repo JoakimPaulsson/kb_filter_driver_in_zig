@@ -1,7 +1,7 @@
 # Keyboard filter driver in Zig
 
 > [!CAUTION]
-> This is a work in progress and will not compile as is. We are running in to [Issue #1499](https://github.com/ziglang/zig/issues/1499). The plan is to patch the translation output in the build script.
+> This is a work in progress. We are running in to [Issue #1499](https://github.com/ziglang/zig/issues/1499). We are patching the translation output in the build script pretty aggressively. One improvement would be to patch only unions with oqaque types.
 
 This project aims to develop a keyboard filter driver using Zig. 
 
@@ -17,6 +17,8 @@ This project aims to develop a keyboard filter driver using Zig.
 - Optional: Direnv
 
 ### Building
+
+**NOTE:** the patching of the translation outputs doesn't always apply and require a clean build.
 
 #### Using direnv
 ```shell
